@@ -59,7 +59,7 @@ function Fitness(){
           </div>
         </div>
         <div className="top-post-details-parent bihar-top">
-          <h3 className="sub-title top-post-title1">Top Post</h3>
+          <h3 className="sub-title top-post-titlefit">Top Post</h3>
           <hr className="sub-heading-hr top-post-hr" />
           <div className="top-post-con">
             <div className="top-post-one-data">

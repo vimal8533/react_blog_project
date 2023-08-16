@@ -296,7 +296,7 @@ function Home(){
           </div>
 
           <div className="top-post-details-parent ">
-            <h3 className="sub-title top-post-title1">Top Post</h3>
+            <h3 className="sub-title top-post-titlehome">Top Post</h3>
             <hr className="sub-heading-hr top-post-hr" />
             <div className="top-post-con">
               <div className="top-post-one-data">
@@ -411,7 +411,7 @@ function Home(){
         </div>
         <div className="latest-story-details-parent">
 
-          <h3 className="sub-title top-post-title1">Latest Stories</h3>
+          <h3 className="sub-title top-post-titlehome1">Latest Stories</h3>
           <hr className="sub-heading-hr top-post-hr" />
           <hr className="latest-stories-divider" />
           <div className="the-latest-parent the-Stories-parent">

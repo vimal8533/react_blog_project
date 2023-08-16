@@ -275,6 +275,25 @@ padding-right: 20px;
 }
 .top-post-title1{
     text-align: left;
+    
+    margin-left: -1px;
+}
+.top-post-titlefood{
+    text-align: left;
+    
+    margin-left: -1px;
+}
+.top-post-titlefit{
+    text-align: left;
+    
+    margin-left: -1px;
+}
+.top-post-titlehome{
+    text-align: left;
+    margin-left: -1px;
+}
+.top-post-titlehome1{
+    text-align: left;
     margin-left: -1px;
 }
 .top-posrt-sub-con2{
@@ -334,8 +353,15 @@ margin-top: 250px;
         overflow-x: hidden;
    
     }
+    .link{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text{
+        font-size: 7vw;
+    }
         .hFooter {
-            margin-top: 700px;
+            margin-top: -7300px;
         }
     .left-card1{
         height: 300px;
@@ -430,8 +456,25 @@ margin-top: 250px;
        margin-left: 5px;
     }
     .top-post-title1{
-        margin-top: 400px;
+        margin-top: 4900px;
     }
+    .top-post-titlefood{
+        margin-left: 5px;
+        margin-top: 7302px;
+    }
+    .top-post-titlefit{
+        margin-top: 2950px;
+        margin-left: 5px;
+    }
+    .top-post-titlehome{
+        margin-left: 5px;
+        margin-top: 000px;
+    }
+    .top-post-titlehome1{
+        margin-left: 5px;
+        margin-top: 50px;
+    }
+    
     .top-post-one-data{
         box-sizing: border-box;
       
@@ -613,7 +656,10 @@ margin: 0px;
      .bihar-top{
   margin-top: 4000px;
     margin-left: -50px;
-     }     
+     }    
+      .foodfooter{
+        margin-top: 10322px;
+      }
 }
 .home1{
     text-decoration: none;

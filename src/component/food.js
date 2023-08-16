@@ -64,7 +64,7 @@ function Food(){
           </div>
         </div>
         <div className="top-post-details-parent food-tops">
-          <h3 className="sub-title top-post-title1">Top Post</h3>
+          <h3 className="sub-title top-post-titlefood">Top Post</h3>
           <hr className="sub-heading-hr top-post-hr" />
           <div className="top-post-con">
             <div className="top-post-one-data">
@@ -186,7 +186,10 @@ function Food(){
 
       </div>
       <div className='food_footer'>
+        <div className="foodfooter">
         <Footer />
+        </div>
+        
 
       </div>
         
