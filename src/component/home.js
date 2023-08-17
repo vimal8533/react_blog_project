@@ -5,12 +5,15 @@ import { NavLink } from 'react-router-dom';
 import './style.css'
 import Footer from './Footer';
 
+import Header from './Header';
+
 function Home(){
     const data=useContext(ContextApi)
     console.log(data);
     return(
       <div className="home-super-parent">
       {/* <Header /> */}
+      <Header/>
       <div className="home-first-card-containeer">
         <div className="left-side">
           {data

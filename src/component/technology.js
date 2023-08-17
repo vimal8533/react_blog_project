@@ -3,11 +3,14 @@ import { ContextApi } from "../App";
 import { NavLink } from "react-router-dom";
 import './style.css'
 import Footer from "./Footer";
+// import Linkcompo from "./linkcompo";
+import Header from "./Header";
 function Technology(){
     const data=useContext(ContextApi)
     console.log(data);
     return(
         <>
+        <Header/>
         <div className='Food-parent'>
         <div className='Food-containeer'>
           <h3 className="sub-title latest-food11">Technology</h3>

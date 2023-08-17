@@ -10,7 +10,7 @@ import Home from './component/home';
 import Technology from './component/technology';
 import Fitness from './component/fitness';
 import Food from './component/food';
-import Linkcompo from './component/linkcompo';
+// import Linkcompo from './component/linkcompo';
 import Innerpage from './component/innerpage';
 import Hollywood from './component/Hollywood';
 export const  ContextApi = createContext();
@@ -20,11 +20,11 @@ function App() {
    
     <>
     <div className="head">
-    <div className="text"> <span className="rotate">The</span>Siren</div>
+    {/* <div className="text"> <span className="rotate">The</span>Siren</div>
         {/* <div className="nav_div"></div> */}
-     <ContextApi.Provider value={Data}>
+     <ContextApi.Provider value={Data}> 
      <BrowserRouter>
-            <Linkcompo/>
+            {/* <Linkcompo/> */}
             <Routes>
             
             <Route path="/" element={<Home/>} />

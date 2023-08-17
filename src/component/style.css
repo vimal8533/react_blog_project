@@ -4,11 +4,43 @@
     font-size: 20px;
     color: gray;
     margin-top: 30px;
-    background-color: yellowgreen;
-    position: sticky;
-    top: 80px;
+    /* background-color: yellowgreen; */
+    /* position: sticky;
+    top: 80px; */
     
 
+}
+.header{
+    background-color:gray;
+    position: sticky;
+    top: 110px;
+    margin: auto;
+
+}
+.the{
+    background-color:lavender;
+    position: fixed;
+    top: 0px;
+    height: 110px;
+    width: 80%;
+    /* position: relative;
+    left: 10%; */
+    margin-left: 10%;
+}
+.the2{
+    background-color:lavender;
+    position: fixed;
+    top: 0px;
+    height: 110px;
+    width: 100%;
+    /* position: relative;
+    left: 10%; */
+    /* margin-left: 10%; */
+    box-shadow: 4px 4px gray;
+    /* display: flex; */
+    /* justify-content: left; */
+    z-index: 50;
+    
 }
 /* .head{
     background-color: yellowgreen;
@@ -20,9 +52,34 @@
     margin-top: 20px;
     font-weight: bold;
     /* background-color: yellowgreen; */
-    position: sticky;
+    /* position: sticky;
+    top: 10px; */
+    position: relative;
     top: 10px;
     
+}
+.text2{
+    display: flex;
+    justify-content: left;
+    font-size: 3vw;
+    margin-top: 20px;
+    font-weight: bold;
+    /* background-color: yellowgreen; */
+    /* position: sticky;
+    top: 10px; */
+    position: relative;
+    top: 10px;
+    left: 5%;
+}
+.get{
+    color: yellowgreen;
+    border: 1px solid yellowgreen;
+    height: 30px;
+    width: 8%;
+    text-align: center;
+    position: relative;
+    left: 85%;
+    bottom: 30%;
 }
 .rotate{
     transform: rotate(-90deg);
@@ -42,7 +99,8 @@
 .nav_title{
     font-size: 27px;
     text-decoration: none;
-    color: gray;
+    color:black;
+    font-weight: bold;
 }
 .box{
     min-height: 200px;
@@ -509,9 +567,10 @@ NavLink{
 .Food-parent{
     box-sizing: border-box;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 80px;
     padding: 28px 15%;
     height: 500px;
+
 
     padding-left: 100px;
 

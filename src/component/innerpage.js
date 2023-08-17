@@ -9,6 +9,7 @@ import SmallCard from './SmallCard';
 import Writer from './Writer';
 import clapping from "../logo/clapping.png";
 import persion from "../logo/man.png";
+import Header2 from './Header2';
 
 function Innerpage() {
     const data=useContext(ContextApi)
@@ -54,6 +55,7 @@ function Innerpage() {
       }
   return (
     <div>
+      <Header2/>
        <div className="latest-one details-parent ">
         {data
           .filter((item) => item.id === url1)

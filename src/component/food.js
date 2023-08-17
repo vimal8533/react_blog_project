@@ -3,12 +3,15 @@ import { ContextApi } from "../App";
 import { NavLink } from "react-router-dom";
 import './style.css'
 import Footer from "./Footer";
+// import Linkcompo from "./linkcompo";
+import Header from "./Header";
 function Food(){
     const data=useContext(ContextApi)
     console.log(data);
     return(
 
         <>
+        <Header/>
           <div className='Food-parent'>
         <div className='Food-containeer'>
           <h3 className="sub-title ">Food</h3>
