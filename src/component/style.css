@@ -396,7 +396,9 @@ margin-top: 250px;
 .none:focus{
     color: rgb(241, 127, 127);
 }
-
+.humber{
+    display: none;
+}
 
 
 @media (min-width:270px) and (max-width:580px) {
@@ -411,6 +413,41 @@ margin-top: 250px;
         overflow-x: hidden;
    
     }
+    .humber{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        margin-top: -30px;
+        margin-left: 80%;
+        z-index: 50;
+    }
+    .hummenu{
+        height: 40px;
+        width: 40px;
+        margin-top: -30px;
+        margin-left: 120%;
+    }
+    .text2{
+        font-size: 8vw;
+    }
+    .text{
+        position: relative;
+        left: -20%;
+    }
+    .the{
+        margin-left: -10%;
+        width: 100%;
+        position: fixed;
+    top: 0px;
+    }
+    .header{
+    
+        background-color:gray;
+        position: sticky;
+        top: 110px;
+        margin: auto;
+
+}
     .link{
         flex-direction: column;
         align-items: center;
@@ -671,7 +708,8 @@ margin: 0px;
     .Food-parent{
         flex-direction: column;
         width: 350px;
-        margin: 10px;
+        margin: -5%;
+    margin-top: 30%;
         box-sizing: border-box;
     
     }

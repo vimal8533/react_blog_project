@@ -66,7 +66,7 @@
     justify-content: flex-start;
     width: 30%;
     text-align: start;
-    margin-top: 80px;
+    margin-top: 10%;
     align-items: center;
     box-sizing: border-box;
     flex-direction: column;
@@ -228,6 +228,12 @@
     * {
       box-sizing: border-box;
     }
+    .footer-parent{
+      
+          position: relative;
+    /* bottom: 100vh; */
+    top:-7500px;
+    }
   .header2Parent {
         width: 100%;
           align-items: center;
@@ -250,11 +256,17 @@
             padding: 5px;}
     .details-parent {
       width: 90vw;
-  
-      margin-top: -200px;
+      height: 1100px;
+      margin-top: -155px;
     
       padding: 4px;
       margin-left: 10px;
+    }
+    .get{
+      left: 67%;
+      height: 30px;
+      width: 21%;
+      bottom: 17%;
     }
     .latest-card1 {
       margin-top: 5px;
@@ -275,7 +287,7 @@
     }
   
     .heading {
-        margin-top: 615px;
+        margin-top:584px;
       width: 90vw;
       margin-bottom: -10px;
       font-size: 1.6em;
@@ -307,12 +319,12 @@
       display: flex;
       flex-direction: column;
       height: 350px;
-      background-color: white;
+      background-color:lavender;
       box-sizing: border-box;
     
     }
     .more-serin{
-      background-color: white;
+      background-color: lavender;
     }
     .res-more-seren-dev {
       display: none;
@@ -375,7 +387,8 @@
       font-weight: 800;
      margin-bottom: 20px;
      border-radius: 5px;
-     margin-top: 950px;
+     margin-top: 283%;
+     margin-left: 25%;
   
   
     }
