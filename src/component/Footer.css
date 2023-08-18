@@ -6,10 +6,10 @@
 
 .footerContainner {
     display: flex;
-    width: 98.8%;
+    width: 100%;
     position: relative;
     z-index: 7;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     background-color: teal;
     color: white;
 }
@@ -84,7 +84,8 @@ footerLogo {
     font-weight: 800;
     font-size: 24px;
     /* margin-right: 0px; */
-    margin: 5px 0px 5px 80px;
+    /* margin: 5px 0px 5px 80px; */
+    margin-top: 3%;
 }
 
 .qsend {
@@ -111,7 +112,7 @@ footerLogo {
 @media (min-width:270px) and (max-width:580px) {
     .footerContainner {
         display: flex;
-        width: 99%;
+        width: 90%;
         position: relative;
         z-index: 7;
         margin-left: 20px;
@@ -125,16 +126,16 @@ footerLogo {
         margin-left: 38%;
     }
     .footerContainner>div {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
+        width: 90%;
+        /* margin: 0px;
+        padding: 0px; */
     }
 
-    .footerContainner {
+    /* .footerContainner {
         margin: 2px;
         
         margin-top: 8200px;
-    }
+    } */
 .blo-des{
     font-size: 15px;
 }
@@ -146,4 +147,12 @@ footerLogo {
 box-sizing: border-box;
 padding: 5px;
         }
+}
+@media (min-width:580px) and (max-width:1000px) {
+    .question{
+        width: 50%;
+    }
+    .qsend{
+        margin: 0px;
+    }
 }
