@@ -34,10 +34,10 @@ function Header() {
         {
       count === 0?<div className='header'><Linkcompo/></div>:""
     }
-      {/* <div className='header'>
+      <div className='headerweb'>
     
       <Linkcompo/>
-      </div> */}
+      </div>
     
     </>
     

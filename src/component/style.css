@@ -17,6 +17,12 @@
     margin: auto;
 
 }
+.headerweb{
+    background-color:gray;
+    position: sticky;
+    top: 110px;
+    margin: auto;
+}
 .the{
     background-color:lavender;
     position: fixed;
@@ -412,6 +418,9 @@ margin-top: 250px;
         width: 90%;
         overflow-x: hidden;
    
+    }
+    .headerweb{
+display: none;
     }
     .humber{
         display: inline-block;
