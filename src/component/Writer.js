@@ -12,7 +12,7 @@ const Writer = () => {
      <div className='smallcard-userdata write-data '>
      <div className='write-name'>WRITTEN BY </div>
       <div className='h5'>Vimal kumar</div>
-    <div>14 August 2023</div>
+    <div>28 August 2023</div>
     
      </div>
     </div>
