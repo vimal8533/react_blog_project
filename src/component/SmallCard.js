@@ -8,7 +8,7 @@ import './innerpage.css'
 
 function SmallCard() {
   return (
-    <div className="smallCard-containeer">
+    <div className="new_smallCard-containeer">
       <div className="smallcard-parent">
         <div>
           <div

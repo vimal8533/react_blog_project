@@ -177,10 +177,12 @@ margin-right: 3%;
   .box2{
     width:95%;
     margin-top: 15%;
+    margin-left: auto;
   }
   .box1{
     margin-top: 25%;
     width: 80%;
+    margin-left: 5%;
   }
   .adv{
     display:none;
@@ -210,4 +212,7 @@ margin-right: 3%;
       display:none;
     } */
   
+  }
+  p{
+    color: black;
   }

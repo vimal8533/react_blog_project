@@ -38,7 +38,7 @@ function Bollywood(){
                               </div>
                               <div className="head_card">
                                 <h3>{data.heading}</h3>
-                                <h5>{data.description.slice(0, 150)}...</h5>
+                                <p>{data.description.slice(0, 150)}...</p>
                                 <span className="travel">
                                   Travel
                                   <span className="travel_details">
