@@ -7,6 +7,7 @@
     /* background-color: yellowgreen; */
     /* position: sticky;
     top: 80px; */
+    /* width: 100%; */
     
 
 }
@@ -22,13 +23,14 @@
     position: sticky;
     top: 110px;
     margin: auto;
+    width: 100%;
 }
 .the{
     background-color:lavender;
     position: fixed;
     top: 0px;
     height: 110px;
-    width: 100%;
+    width: 99%;
     z-index: 50;
 
 }
@@ -61,6 +63,7 @@
     top: 10px; */
     position: relative;
     top: 10px;
+    color: black;
     
 }
 .text2{
@@ -129,9 +132,9 @@ margin: 0px;
 }
 
 .hFooter{
-    margin-top: 250px;
-    width: 100.1%;
-    margin-left: 1px;
+    /* margin-top: 250px; */
+    width: 100%;
+    /* margin-left: 1px; */
     background-color: teal;
 }
 .hFooter * {
