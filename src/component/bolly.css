@@ -165,6 +165,7 @@ margin-right: 3%;
     /* margin: auto; */
   }
   @media (min-width:270px) and (max-width:580px) {
+
   .main_box{
     flex-direction: column;
   }
@@ -174,6 +175,12 @@ margin-right: 3%;
   .news_box{
     flex-direction: column;
   }
+  .img_card{
+    height: 180px;
+    width: 250px;
+    margin-left: 3%;
+    
+   }
   .box2{
     width:95%;
     margin-top: 15%;

@@ -255,6 +255,11 @@
 
 
 }
+.main_img{
+  height: 450px;
+  width: 450px;
+  margin-top: 3%;
+}
   @media (min-width: 270px) and (max-width: 580px) {
     * {
       box-sizing: border-box;
@@ -297,12 +302,12 @@
     
       /* padding: 4px; */
       /* margin-left: 10px; */
-      margin-top: 20%;
+      margin-top: 25%;
     }
     .get{
       left: 67%;
       height: 30px;
-      width: 21%;
+      width: 25%;
       bottom: 17%;
     }
     .latest-card1 {
@@ -354,6 +359,7 @@
       /* margin: auto; */
       margin-left: 22%;
       /* margin-top: 112%; */
+      /* margin-top: 50%; */
     }
     .small-social {
       display: flex;
@@ -474,10 +480,10 @@
       margin-top: 3%;
       margin-bottom: 5%;
       margin-right: 5%;
-      margin-left: 5%;
+      margin-left: 30%;
       border-radius: 10px;
-      height: 200px;
-      width: 200px;
+      height: 300px;
+      width: 300px;
 
     }
     .home1{
@@ -496,11 +502,7 @@
     flex-direction: column;
     /* margin-top: 6%; */
   }
-  .main_img{
-    height: 450px;
-    width: 450px;
-    margin-top: 3%;
-  }
+  
 .home1{
   /* border: solid 1px black; */
   margin-left: 10%;
@@ -511,4 +513,66 @@
   box-shadow: 5px 5px 5px 5px gray;
 }
 
+@media (min-width: 580px) and (max-width: 1000px) {
+.main_img{
+  height: 300px;
+  width: 380px;
+}
+.fixed-res{
+  display: none;
+}
+.details-des{
+  width: 100%;
+}
+.new_smallCard-containeer{
+  width: 50vw
+}
+.inner_main{
+  width: 50%;
+  margin-top: 3%;
+}
+/* .more-serin{
+  width: 0%;
+} */
+.more-parent{
+  width: 100%;
+  /* margin-right: 5%; */
+}
+.latest-card1{
+  /* height: 50%; */
+  height: 100px;
+  width: 200px;
+  /* width: 100%; */
+}
+.more-dev{
+  display: none;
+}
+.more-one{
+  margin-left: -5%;
+}
+.goBack{
+  display: block;
+  /* padding: 5px 25px; */
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  font-weight: 800;
+ /* margin-bottom: 20px; */
+ border-radius: 5px;
+ /* margin-top: 283%; */
+ /* margin-left:45%; */
+ /* margin-top: 50%; */
+ /* margin-left: 100px; */
+ /* margin-top: 50%; */
+/* display: none; */
+margin-left: 40%;
+
+}
+.get{
+  width: 15%;
+  /* margin-right: 20%; */
+  left: 80%;
+  margin-top: 3%;
+}
+}
   
