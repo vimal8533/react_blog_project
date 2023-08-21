@@ -419,7 +419,7 @@
   flex-direction: column;
   height: 350px;
   width: 95%;
-  margin-top: 10px;
+  /* margin-top: 10px; */
  }
  .home_top_left{
   width: 100%;
