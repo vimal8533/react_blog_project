@@ -465,6 +465,7 @@ display: none;
     .link{
         flex-direction: column;
         align-items: center;
+        margin-top: 27%;
     }
     .text{
         font-size: 7vw;
