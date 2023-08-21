@@ -130,8 +130,9 @@
   .fixed-parent {
     height: 70px;
     width: 180px;
-    position: fixed;
+    position: absolute;
     top: 60vh;
+    
     z-index: -100;
     background-color: lavender;
     align-items: center;
