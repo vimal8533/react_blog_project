@@ -168,6 +168,7 @@ margin-right: 3%;
 
   .main_box{
     flex-direction: column;
+    justify-content: center;
   }
   .head_card{
     flex-direction: column;
@@ -189,7 +190,7 @@ margin-right: 3%;
   .box1{
     margin-top: 25%;
     width: 80%;
-    margin-left: 5%;
+    margin-left: 12%;
   }
   .adv{
     display:none;
