@@ -254,7 +254,7 @@ function Home(){
                 <NavLink to={`/${data.id}`} className={"nav_link"} >
                      <div className='top-post-small-first'>
                      <img src={data.image} alt="not found"></img>
-            <h3 className='side_heading'>{data.heading}</h3>
+            <h3 >{data.heading}</h3>
                      </div>
                     
             {/* <p>{data.description}</p> */}
