@@ -200,7 +200,8 @@ margin-right: 3%;
 
 @media (min-width:580px) and (max-width:1000px) {
     .main_box{
-        justify-content:center
+        justify-content:center;
+        margin-top: 13%;
     }
     .head_card{
       flex-direction: column;

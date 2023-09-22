@@ -556,6 +556,22 @@
   .link1 {
       font-size: 3vw;
 }
+.adv {
+  -webkit-animation: anim 2s infinite;
+  animation: anim 2s infinite;
+  background-color: red;
+  border: 1px solid #000;
+  margin: 40% auto auto;
+  min-height: 9%;
+  text-align: center;
+  width: 80%;
+  position: sticky;
+  top: 200px;
+}
+.box2 {
+  margin-right: 3%;
+  width: 45%;
+}
 .navbar{
   top: 6%;
 }
