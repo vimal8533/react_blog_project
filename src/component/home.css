@@ -589,6 +589,8 @@
   height: 100%;
   margin-left: 10px;
   font-size: 2vw;
+  
+  
 }
 .latest_story_parent {
   width: 95%;
@@ -627,6 +629,10 @@
     /* margin: 5px 5px 5px 135px; */
     width: 100px;
     /* height: 40px; */
+}
+.side_heading{
+  /* font-size: 23px; */
+  overflow-wrap: break-word;
 }
 }
 .latest_story_child:hover{

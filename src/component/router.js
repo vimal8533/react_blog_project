@@ -7,6 +7,7 @@ import Fitness from "./fitness";
 import Food from "./food";
 import Linkcompo from "./linkcompo";
 import './style.css'
+    
 
 function Routescompo(){
     return(

@@ -63,11 +63,12 @@ const Data =  [
     },
     {
         id:2,
-        heading:"78-year-old man trying to cancel train tickets on IRCTC website, ends up losing Rs 4 lakh in online scam",
-        image:'https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/man-irctc-124613-16x9.jpeg?VersionId=H2Q0GZc5lJM_i6humt8GndjoOdDGI8MJ&size=690:388',
-        description:'A 78-year-old man attempting to cancel train tickets on the IRCTC website lost Rs 4 lakh in an online scam, falling victim to a fake website and a person posing as a railway employee who gained access to his device and personal information. Scammers deployed various malware tools such as Remote Access Trojans (RATs), keyloggers, and spyware to control his device, leading to the unauthorized withdrawal of funds from his bank accounts.',
-        cat:'technology',
+        heading:"Rajinikanth seeks blessings at Badrinath post Jailer release",
+        image:"https://filmfare.wwmindia.com/content/2023/aug/rajinikanth31691910250.jpg",
+        description:"Jailer has been released, and fans are overjoyed to finally see their favourite star Rajinikanth they've been missing on the big screen. The actor is currently not in town to celebrate the film's enormous success with the rest of the cast and crew. Rajinikanth paid a visit to the Badrinath Temple on Saturday post the release of Jailer.The Petta actor also interacted with a few of his fans during his visit to the temple. The actor was dressed in a light blue jumper as he drew the attention of fans, who were clearly excited to see Rajinikanth up close.",
+        cat:"bolloywood"
     },
+    
     {
         id:3,
         heading:"How To Keep Your Liver Healthy And Well Functioning? Experts Share Tips",
@@ -182,11 +183,12 @@ const Data =  [
     },
     {
         id:19,
-        heading:"Rajinikanth seeks blessings at Badrinath post Jailer release",
-        image:"https://filmfare.wwmindia.com/content/2023/aug/rajinikanth31691910250.jpg",
-        description:"Jailer has been released, and fans are overjoyed to finally see their favourite star Rajinikanth they've been missing on the big screen. The actor is currently not in town to celebrate the film's enormous success with the rest of the cast and crew. Rajinikanth paid a visit to the Badrinath Temple on Saturday post the release of Jailer.The Petta actor also interacted with a few of his fans during his visit to the temple. The actor was dressed in a light blue jumper as he drew the attention of fans, who were clearly excited to see Rajinikanth up close.",
-        cat:"bolloywood"
+        heading:"78-year-old man trying to cancel train tickets on IRCTC website, ends up losing Rs 4 lakh in online scam",
+        image:'https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/man-irctc-124613-16x9.jpeg?VersionId=H2Q0GZc5lJM_i6humt8GndjoOdDGI8MJ&size=690:388',
+        description:'A 78-year-old man attempting to cancel train tickets on the IRCTC website lost Rs 4 lakh in an online scam, falling victim to a fake website and a person posing as a railway employee who gained access to his device and personal information. Scammers deployed various malware tools such as Remote Access Trojans (RATs), keyloggers, and spyware to control his device, leading to the unauthorized withdrawal of funds from his bank accounts.',
+        cat:'technology',
     },
+    
     {
         id:20,
         heading:"HP Envy x360 with ‘IMAX-enhanced’ notebook review: Have a good time at the movies",
