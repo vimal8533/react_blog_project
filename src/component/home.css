@@ -180,6 +180,7 @@
     justify-content: space-between;
     /* border: solid 6px orangered; */
     /* background-color: aqua; */
+    
   }
   .latest_artical_right{
     width: 100%;
@@ -349,11 +350,12 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 4%;
   }
   .latest_story_header{
     margin-left: 10%;
     text-decoration: underline;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .latest_story_parent .latest_story_child{
     /* width: 33%; */
