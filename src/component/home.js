@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { ContextApi } from "../App"
 import { NavLink } from 'react-router-dom';
+
+
 import './style.css'
 import Footer from './Footer';
 import './home.css'
 
 import Header from './Header';
+import axios from 'axios';
 
 function Home(){
-    const data=useContext(ContextApi)
-    console.log(data);
+    const [data, setDetails] = useState("")
+  console.log(data);
+
+  useEffect(() => {
+    axios.get('https://reactblogserver.onrender.com/data')
+      .then(response => response.data)
+      .then(biharData => {
+        console.log(biharData, "bihari bubu")
+        setDetails(biharData)
+
+      }
+      )
+  }, [])
+  console.log(data);
     return(
       <>
       {/* <div className="home-super-parent"> */}
@@ -20,7 +35,7 @@ function Home(){
 
 <div className="home_top_left">
     {
-    data.filter((item)=>item.id===14).map((data)=>{
+    data&&data.filter((item)=>item.id===14).map((data)=>{
         return(
             <>
             {

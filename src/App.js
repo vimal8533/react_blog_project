@@ -1,6 +1,6 @@
 
 import { createContext } from 'react';
-import Data from './component/Store';
+// import Data from './component/Store';
 import './App.css';
 // import Routescompo from './component/router'
 // import Store from './component/Store';
@@ -22,7 +22,7 @@ function App() {
     <div className="head">
     {/* <div className="text"> <span className="rotate">The</span>Siren</div>
         {/* <div className="nav_div"></div> */}
-     <ContextApi.Provider value={Data}> 
+     {/* <ContextApi.Provider value={Data}>  */}
      <BrowserRouter>
             {/* <Linkcompo/> */}
             <Routes>
@@ -37,7 +37,7 @@ function App() {
            </Routes>
             </BrowserRouter>
 
-     </ContextApi.Provider>
+     {/* </ContextApi.Provider> */}
     </div>
       
     </>
