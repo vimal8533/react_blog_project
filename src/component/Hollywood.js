@@ -1,14 +1,27 @@
-import React, { useContext } from 'react'
-import { ContextApi } from "../App"
+import React, { useEffect, useState } from 'react'
+
 import { NavLink } from "react-router-dom";
 import './bolly.css'
 import Footer from "./Footer";
 // import Linkcompo from './linkcompo';
 import Header from './Header';
+import axios from 'axios';
 
 const Hollywood = () => {
-  const data=useContext(ContextApi)
-    console.log(data);
+  const [data, setDetails] = useState("")
+  console.log(data);
+
+  useEffect(() => {
+    axios.get('https://reactblogserver.onrender.com/data')
+      .then(response => response.data)
+      .then(store => {
+        console.log(store, "bihari bubu")
+        setDetails(store)
+
+      }
+      )
+  }, [])
+  console.log(data);
   return (
     <>
     <Header/>
@@ -18,8 +31,7 @@ const Hollywood = () => {
         <h1 className="head">Hollywood</h1>
         <hr className="head_line"/>
         <div className="news_card">
-        {data
-                  .filter((item) => item.cat === "hollywood")
+        {data && data.filter((item) => item.cat === "hollywood")
                   .map((data) => {
                     return (
                       <>
@@ -60,8 +72,7 @@ const Hollywood = () => {
       <div className="box2">
       <h1 className="head">Top Posts</h1>
         <hr className="head_line"/>
-        {data
-                .filter((item) => item.id === 72)
+        {data && data && data.filter((item) => item.id === 72)
                 .map((data) => {
 
                   return (
@@ -100,8 +111,7 @@ const Hollywood = () => {
                     </>
                   );
                 })}
-                 {data
-              .filter((item) => item.id === 75)
+                 {data && data && data.filter((item) => item.id === 75)
               .map((data) => {
                 return (
                   <>
@@ -132,8 +142,7 @@ const Hollywood = () => {
                   </>
                 );
               })}
-              {data
-              .filter((item) => item.id === 78)
+              {data && data && data.filter((item) => item.id === 78)
               .map((data) => {
                 return (
                   <>
@@ -164,8 +173,7 @@ const Hollywood = () => {
                   </>
                 );
               })}
-              {data
-              .filter((item) => item.id === 80)
+              {data && data && data.filter((item) => item.id === 80)
               .map((data) => {
                 return (
                   <>

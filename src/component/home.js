@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useContext } from 'react';
-import { ContextApi } from "../App"
+
 import { NavLink } from 'react-router-dom';
 
 
@@ -13,19 +12,19 @@ import axios from 'axios';
 
 function Home(){
     const [data, setDetails] = useState("")
-  console.log(data);
-
-  useEffect(() => {
-    axios.get('https://reactblogserver.onrender.com/data')
-      .then(response => response.data)
-      .then(biharData => {
-        console.log(biharData, "bihari bubu")
-        setDetails(biharData)
-
-      }
-      )
-  }, [])
-  console.log(data);
+    console.log(data);
+  
+    useEffect(() => {
+      axios.get('https://reactblogserver.onrender.com/data')
+        .then(response => response.data)
+        .then(store => {
+          console.log(store, "bihari bubu")
+          setDetails(store)
+  
+        }
+        )
+    }, [])
+    console.log(data);
     return(
       <>
       {/* <div className="home-super-parent"> */}
@@ -35,7 +34,7 @@ function Home(){
 
 <div className="home_top_left">
     {
-    data&&data.filter((item)=>item.id===14).map((data)=>{
+    data && data.filter((item)=>item.id===14).map((data)=>{
         return(
             <>
             {
@@ -52,7 +51,7 @@ function Home(){
 <div className="home_top_right">
   <div className="home_top_right1">
   {
-    data.filter((item)=>item.id===55).map((data)=>{
+    data && data.filter((item)=>item.id===55).map((data)=>{
         return(
             <>
             {
@@ -68,7 +67,7 @@ function Home(){
   </div>
   <div className="home_top_right2">
   {
-    data.filter((item)=>item.id===44).map((data)=>{
+    data && data.filter((item)=>item.id===44).map((data)=>{
         return(
             <>
             {
@@ -92,7 +91,7 @@ function Home(){
 <div className="home_latest1">
 
 {
-    data.filter((item)=>item.id===31).map((data)=>{
+   data && data.filter((item)=>item.id===31).map((data)=>{
         return(
             <>
             {
@@ -110,7 +109,7 @@ function Home(){
 </div>
 <div className="home_latest1">
 {
-    data.filter((item)=>item.id===17).map((data)=>{
+   data && data.filter((item)=>item.id===17).map((data)=>{
         return(
             <>
             {
@@ -128,7 +127,7 @@ function Home(){
 </div>
 <div className="home_latest1">
 {
-    data.filter((item)=>item.id===37).map((data)=>{
+    data && data.filter((item)=>item.id===37).map((data)=>{
         return(
             <>
             {
@@ -150,7 +149,7 @@ function Home(){
 <div className="latest_artical">
    <div className="latest_artical_left">
    {
-    data.filter((item)=>item.id>68 && item.id<73).map((data)=>{
+    data && data.filter((item)=>item.id>68 && item.id<73).map((data)=>{
         return(
             <>
             {
@@ -176,7 +175,7 @@ function Home(){
    {/* <div className='loadmore'>Load more ↓</div> */}
    <div className='the-latest-loadmore-bottom'>
    {
-    data.filter((item)=>item.id===55).map((data)=>{
+   data && data.filter((item)=>item.id===55).map((data)=>{
         return(
             <>
             {
@@ -200,7 +199,7 @@ function Home(){
     <div className='top-post1st-big'>
         <h3>Top Post</h3>
         {
-    data.filter((item)=>item.id===80).map((data)=>{
+   data &&  data.filter((item)=>item.id===80).map((data)=>{
         return(
             <>
             {
@@ -221,7 +220,7 @@ function Home(){
     <div className='top-post2nd-smalls'>
         
         {
-    data.filter((item)=>item.id===79).map((data)=>{
+   data && data.filter((item)=>item.id===79).map((data)=>{
         return(
             <>
             {
@@ -241,7 +240,7 @@ function Home(){
 }
         
         {
-    data.filter((item)=>item.id===69).map((data)=>{
+   data && data.filter((item)=>item.id===69).map((data)=>{
         return(
             <>
             {
@@ -262,7 +261,7 @@ function Home(){
 }
        
         {
-    data.filter((item)=>item.id===59).map((data)=>{
+   data && data.filter((item)=>item.id===59).map((data)=>{
         return(
             <>
             {
@@ -290,7 +289,7 @@ function Home(){
  <div className='latest_story_parent'>
    
     {
-    data.filter((item)=>item.id>40 && item.id<44).map((data)=>{
+   data && data.filter((item)=>item.id>40 && item.id<44).map((data)=>{
         return(
             <>
             {

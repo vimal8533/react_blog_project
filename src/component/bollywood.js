@@ -1,9 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
-import { ContextApi } from "../App"
+import React, { useEffect, useState } from "react";
+
 import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import './bolly.css'
+import axios from "axios";
 
 
 function Bollywood(){
@@ -13,9 +14,9 @@ function Bollywood(){
   useEffect(() => {
     axios.get('https://reactblogserver.onrender.com/data')
       .then(response => response.data)
-      .then(biharData => {
-        console.log(biharData, "bihari bubu")
-        setDetails(biharData)
+      .then(store => {
+        console.log(store, "bihari bubu")
+        setDetails(store)
 
       }
       )
@@ -31,8 +32,7 @@ function Bollywood(){
         <h1 className="head">Bollywood</h1>
         <hr className="head_line"/>
         <div className="news_card">
-        {data
-                  .filter((item) => item.cat === "bolloywood")
+        {data && data && data.filter((item) => item.cat === "bolloywood")
                   .map((data) => {
                     return (
                       <>
@@ -73,8 +73,7 @@ function Bollywood(){
       <div className="box2">
       <h1 className="head">Top Posts</h1>
         <hr className="head_line"/>
-        {data
-                .filter((item) => item.id === 10)
+        {data && data.filter((item) => item.id === 10)
                 .map((data) => {
 
                   return (
@@ -113,8 +112,7 @@ function Bollywood(){
                     </>
                   );
                 })}
-                 {data
-              .filter((item) => item.id === 9)
+                 {data && data.filter((item) => item.id === 9)
               .map((data) => {
                 return (
                   <>
@@ -145,8 +143,7 @@ function Bollywood(){
                   </>
                 );
               })}
-              {data
-              .filter((item) => item.id === 15)
+              {data && data.filter((item) => item.id === 15)
               .map((data) => {
                 return (
                   <>
@@ -177,8 +174,7 @@ function Bollywood(){
                   </>
                 );
               })}
-              {data
-              .filter((item) => item.id === 7)
+              {data && data.filter((item) => item.id === 7)
               .map((data) => {
                 return (
                   <>

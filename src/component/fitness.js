@@ -1,13 +1,26 @@
-import React, { useContext } from "react";
-import { ContextApi } from "../App";
+import React, { useEffect, useState } from "react";
+
 
 import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import './bolly.css'
 import Header from "./Header";
+import axios from "axios";
 function Fitness(){
-    const data=useContext(ContextApi)
-    console.log(data);
+  const [data, setDetails] = useState("")
+  console.log(data);
+
+  useEffect(() => {
+    axios.get('https://reactblogserver.onrender.com/data')
+      .then(response => response.data)
+      .then(store => {
+        console.log(store, "bihari bubu")
+        setDetails(store)
+
+      }
+      )
+  }, [])
+  console.log(data);
     return(
 
       <>
@@ -18,8 +31,7 @@ function Fitness(){
           <h1 className="head">Fitness</h1>
           <hr className="head_line"/>
           <div className="news_card">
-          {data
-                    .filter((item) => item.cat === "fitness")
+          {data && data.filter((item) => item.cat === "fitness")
                     .map((data) => {
                       return (
                         <>
@@ -60,8 +72,7 @@ function Fitness(){
         <div className="box2">
         <h1 className="head">Top Posts</h1>
           <hr className="head_line"/>
-          {data
-                  .filter((item) => item.id === 38)
+          {data && data.filter((item) => item.id === 38)
                   .map((data) => {
   
                     return (
@@ -100,8 +111,7 @@ function Fitness(){
                       </>
                     );
                   })}
-                   {data
-                .filter((item) => item.id === 44)
+                   {data && data.filter((item) => item.id === 44)
                 .map((data) => {
                   return (
                     <>
@@ -132,8 +142,7 @@ function Fitness(){
                     </>
                   );
                 })}
-                {data
-                .filter((item) => item.id === 50)
+                {data && data.filter((item) => item.id === 50)
                 .map((data) => {
                   return (
                     <>
@@ -164,8 +173,7 @@ function Fitness(){
                     </>
                   );
                 })}
-                {data
-                .filter((item) => item.id === 53)
+                {data && data.filter((item) => item.id === 53)
                 .map((data) => {
                   return (
                     <>

@@ -1,13 +1,26 @@
-import React, { useContext } from "react";
-import { ContextApi } from "../App";
+import React, { useEffect, useState }  from "react";
+
 import { NavLink } from "react-router-dom";
 
 import Footer from "./Footer";
 import './bolly.css'
 import Header from "./Header";
+import axios from "axios";
 function Technology(){
-    const data=useContext(ContextApi)
-    console.log(data);
+  const [data, setDetails] = useState("")
+  console.log(data);
+
+  useEffect(() => {
+    axios.get('https://reactblogserver.onrender.com/data')
+      .then(response => response.data)
+      .then(store => {
+        console.log(store, "bihari bubu")
+        setDetails(store)
+
+      }
+      )
+  }, [])
+  console.log(data);
     return(
         <>
        <Header/>
@@ -17,8 +30,7 @@ function Technology(){
            <h1 className="head">Technology</h1>
            <hr className="head_line"/>
            <div className="news_card">
-           {data
-                     .filter((item) => item.cat === "technology")
+           {data && data.filter((item) => item.cat === "technology")
                      .map((data) => {
                        return (
                          <>
@@ -59,8 +71,7 @@ function Technology(){
          <div className="box2">
          <h1 className="head">Top Posts</h1>
            <hr className="head_line"/>
-           {data
-                   .filter((item) => item.id === 20)
+           {data && data.filter((item) => item.id === 20)
                    .map((data) => {
    
                      return (
@@ -99,8 +110,7 @@ function Technology(){
                        </>
                      );
                    })}
-                    {data
-                 .filter((item) => item.id === 25)
+                    {data && data.filter((item) => item.id === 25)
                  .map((data) => {
                    return (
                      <>
@@ -131,8 +141,7 @@ function Technology(){
                      </>
                    );
                  })}
-                 {data
-                 .filter((item) => item.id === 28)
+                 {data && data.filter((item) => item.id === 28)
                  .map((data) => {
                    return (
                      <>
@@ -163,8 +172,7 @@ function Technology(){
                      </>
                    );
                  })}
-                 {data
-                 .filter((item) => item.id === 29)
+                 {data && data.filter((item) => item.id === 29)
                  .map((data) => {
                    return (
                      <>
